@@ -1,0 +1,7 @@
+- hosts: nginx
+  user: osboxes
+  tasks:
+    - name: Config Proxy Reverso Nginx Dinamic
+      template:
+        src: "nginx_exemplo"
+        dest: "/etc/nginx/config.d/reverse.conf"
