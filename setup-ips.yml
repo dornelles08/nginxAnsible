@@ -4,4 +4,4 @@
     - name: Config Proxy Reverso Nginx Dinamic
       template:
         src: "nginx_exemplo"
-        dest: "/etc/nginx/config.d/reverse.conf"
+        dest: "/etc/nginx/conf.d/reverse.conf"
