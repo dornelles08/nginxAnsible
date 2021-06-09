@@ -1,7 +1,7 @@
 server {
     listen 8080;
     location / {
-        {% for i in group['allow'] %}
+        {% for i in groups['allow'] %}
             {{ i }}
         {% endfor %}
         deny all;
