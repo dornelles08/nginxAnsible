@@ -1,6 +1,5 @@
----
-- name: Install nginx
-  apt:
-    pkg:
-    - nginx
-    update_cache: yes
+- hosts: nginx
+  become: yes
+  user: osboxes
+  roles:
+    - { role: install-nginx, tags: ["install_nginx"] }
