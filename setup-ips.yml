@@ -1,5 +1,5 @@
 - hosts: nginx
-  user: osboxes
+  user: root
   tasks:
     - name: Config Proxy Reverso Nginx Dinamic
       template:
