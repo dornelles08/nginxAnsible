@@ -1,0 +1,11 @@
+server {
+    listen 8080;
+    location / {
+        {% for i in group['allow'] %}
+            {{ i }}
+        {% endfor %}
+        deny all;
+        proxy_pass "https://google.com";
+
+    }
+}
