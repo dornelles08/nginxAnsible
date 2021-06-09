@@ -1,6 +1,6 @@
 ---
 - name: Install nginx
-  apt:
+  yum:
     pkg:
     - nginx
     update_cache: yes
